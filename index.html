@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ГДЗ Каталог</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="loading" class="screen active">
+            <div class="spinner"></div>
+            <p>Загружаю каталог…</p>
+        </div>
+
+        <div id="classScreen" class="screen">
+            <h2>📚 Выбери класс</h2>
+            <div id="classGrid" class="class-grid"></div>
+        </div>
+
+        <div id="bookScreen" class="screen">
+            <div class="top-bar">
+                <button id="backBtn" class="icon-btn">←</button>
+                <h2 id="classTitle">Учебники</h2>
+                <button id="selectAllBtn" class="icon-btn">✓</button>
+            </div>
+            <div id="bookList" class="book-list"></div>
+        </div>
+
+        <div id="saveBar" class="save-bar hidden">
+            <span id="selectedCount">0 выбрано</span>
+            <button id="saveBtn">💾 Сохранить</button>
+        </div>
+
+        <div id="resultScreen" class="screen">
+            <div class="result-box">
+                <div id="resultIcon">✅</div>
+                <h2 id="resultTitle">Готово!</h2>
+                <p id="resultText"></p>
+                <button id="closeBtn">Закрыть</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

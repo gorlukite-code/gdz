@@ -1,0 +1,18 @@
+{
+  "7": [
+    {
+      "subject": "Алгебра",
+      "name": "Макарычев 7 класс углублённое изучение",
+      "base_url": "https://gdz.ru/class-7/algebra/makarychev-uglublennoe-izuchenie/",
+      "template": "{task}-nom/",
+      "img": ""
+    },
+    {
+      "subject": "Геометрия",
+      "name": "Атанасян 7-9 класс",
+      "base_url": "https://gdz.ru/class-7/geometria/atanasyan-7-9/",
+      "template": "1-chapter-{task}/",
+      "img": ""
+    }
+  ]
+}
