@@ -1,12 +1,15 @@
+// ═══════════ Telegram WebApp ═══════════
 const tg = window.Telegram?.WebApp;
 if (tg) {
-  tg.ready(); tg.expand();
+  tg.ready();
+  tg.expand();
   tg.setHeaderColor?.('#1c1c1e');
   tg.setBackgroundColor?.('#1c1c1e');
 }
 
+// ═══════════ Состояние ═══════════
 const state = {
-  catalog: {},       // {class: [{subject, author, name, base_url, template, img, tasks_count}]}
+  catalog: {},          // {class: [{subject, author, name, base_url, template, img, tasks_count}]}
   currentClass: null,
   currentSubject: null,
   query: '',
@@ -15,7 +18,11 @@ const state = {
 };
 
 const $ = id => document.getElementById(id);
-const screens = { loading: $('loading'), class: $('classScreen'), result: $('resultScreen') };
+const screens = {
+  loading: $('loading'),
+  class:   $('classScreen'),
+  result:  $('resultScreen'),
+};
 
 function showScreen(name) {
   Object.values(screens).forEach(s => s.classList.remove('active'));
@@ -25,7 +32,7 @@ function showScreen(name) {
 
 function bookKey(b) { return `${b.base_url}|${b.template}`; }
 
-// ═══ Загрузка ═══
+// ═══════════ Загрузка каталога ═══════════
 async function loadCatalog() {
   try {
     const res = await fetch('data.json?v=' + Date.now(), { cache: 'no-store' });
@@ -35,19 +42,22 @@ async function loadCatalog() {
     showScreen('class');
     $('searchWrap').classList.remove('hidden');
   } catch (e) {
-    console.error(e);
+    console.error('Ошибка загрузки каталога:', e);
     screens.loading.innerHTML =
-      '<div class="empty"><div class="big">⚠️</div><p>Не удалось загрузить</p>' +
-      '<button onclick="location.reload()" style="margin-top:14px;padding:12px 24px;border-radius:10px;border:none;background:#0a84ff;color:#fff;font-weight:600">Повторить</button></div>';
+      '<div class="empty"><div class="big">⚠️</div>' +
+      '<p>Не удалось загрузить каталог</p>' +
+      '<button onclick="location.reload()" ' +
+      'style="margin-top:14px;padding:12px 24px;border-radius:10px;' +
+      'border:none;background:#0a84ff;color:#fff;font-weight:600">Повторить</button></div>';
   }
 }
 
-// ═══ Экран с классами / предметами / книгами ═══
+// ═══════════ Экран: классы / предметы / книги ═══════════
 function renderClassScreen() {
   const cls = state.currentClass;
   const subj = state.currentSubject;
 
-  // Breadcrumbs
+  // Хлебные крошки
   const crumbs = $('crumbs');
   let crHTML = '<span data-nav="root">Все классы</span>';
   if (cls) {
@@ -64,10 +74,12 @@ function renderClassScreen() {
     renderClassScreen();
   };
 
-  // Class grid
+  // Сетка классов
   const classGrid = $('classGrid');
   classGrid.innerHTML = '';
+
   if (!cls) {
+    classGrid.style.display = 'grid';
     const classes = Object.keys(state.catalog).sort((a, b) => parseInt(a) - parseInt(b));
     if (!classes.length) {
       classGrid.innerHTML = '<div class="empty" style="grid-column:1/-1"><div class="big">📭</div><p>Каталог пуст</p></div>';
@@ -80,7 +92,11 @@ function renderClassScreen() {
       const d = document.createElement('div');
       d.className = 'class-card';
       d.innerHTML = `${c} класс<small>${count} уч.</small>`;
-      d.onclick = () => { state.currentClass = c; state.currentSubject = null; renderClassScreen(); };
+      d.onclick = () => {
+        state.currentClass = c;
+        state.currentSubject = null;
+        renderClassScreen();
+      };
       classGrid.appendChild(d);
     });
     $('subjectChips').classList.add('hidden');
@@ -90,10 +106,11 @@ function renderClassScreen() {
 
   classGrid.style.display = 'none';
 
-  // Subject chips
+  // Чипы предметов
   const books = state.catalog[cls] || [];
   const subjects = {};
   books.forEach(b => { subjects[b.subject] = (subjects[b.subject] || 0) + 1; });
+
   const chips = $('subjectChips');
   chips.classList.remove('hidden');
   chips.innerHTML = '';
@@ -123,12 +140,12 @@ function renderBooksList() {
 
   let books = (state.catalog[cls] || []).slice();
 
-  // Filter by subject
+  // Фильтр по предмету
   if (state.currentSubject) {
     books = books.filter(b => b.subject === state.currentSubject);
   }
 
-  // Filter by search
+  // Поиск
   const q = state.query.trim().toLowerCase();
   if (q) {
     books = books.filter(b => {
@@ -143,44 +160,50 @@ function renderBooksList() {
     return;
   }
 
-  // Group by author
+  // Группировка по автору
   const groups = {};
   books.forEach(b => {
     const a = b.author || 'Прочее';
     (groups[a] = groups[a] || []).push(b);
   });
 
-  Object.entries(groups).sort(([a], [b]) => a.localeCompare(b, 'ru')).forEach(([author, items]) => {
-    const groupKey = `${cls}|${state.currentSubject || '*'}|${author}`;
-    const collapsed = !!state.collapsed[groupKey];
+  Object.entries(groups)
+    .sort(([a], [b]) => a.localeCompare(b, 'ru'))
+    .forEach(([author, items]) => {
+      const groupKey = `${cls}|${state.currentSubject || '*'}|${author}`;
+      const collapsed = !!state.collapsed[groupKey];
 
-    const g = document.createElement('div');
-    g.className = 'author-group' + (collapsed ? ' collapsed' : '');
+      const g = document.createElement('div');
+      g.className = 'author-group' + (collapsed ? ' collapsed' : '');
 
-    const head = document.createElement('div');
-    head.className = 'author-head';
-    head.innerHTML = `<span class="arrow">▼</span><h3>${author}</h3><span class="count">${items.length}</span>`;
-    head.onclick = () => {
-      state.collapsed[groupKey] = !collapsed;
-      renderBooksList();
-    };
-    g.appendChild(head);
+      const head = document.createElement('div');
+      head.className = 'author-head';
+      head.innerHTML =
+        `<span class="arrow">▼</span><h3>${author}</h3>` +
+        `<span class="count">${items.length}</span>`;
+      head.onclick = () => {
+        state.collapsed[groupKey] = !collapsed;
+        renderBooksList();
+      };
+      g.appendChild(head);
 
-    const body = document.createElement('div');
-    body.className = 'author-books';
-    items.forEach(b => body.appendChild(renderBookCard(b)));
-    g.appendChild(body);
+      const body = document.createElement('div');
+      body.className = 'author-books';
+      items.forEach(b => body.appendChild(renderBookCard(b)));
+      g.appendChild(body);
 
-    list.appendChild(g);
-  });
+      list.appendChild(g);
+    });
 }
 
 function renderBookCard(b) {
   const key = bookKey(b);
   const isSel = state.selected.has(key);
+
   const card = document.createElement('div');
   card.className = 'book-card' + (isSel ? ' selected' : '');
 
+  // Обложка
   const thumb = document.createElement('div');
   if (b.img) {
     thumb.className = 'book-thumb';
@@ -193,29 +216,36 @@ function renderBookCard(b) {
   }
   card.appendChild(thumb);
 
+  // Инфо
   const info = document.createElement('div');
   info.className = 'book-info';
-  info.innerHTML = `<div class="book-name">${b.name}</div>
-    <div class="book-meta">${b.subject || ''} · заданий: ${b.tasks_count || '—'}</div>`;
+  info.innerHTML =
+    `<div class="book-name">${b.name}</div>` +
+    `<div class="book-meta">${b.subject || ''} · заданий: ${b.tasks_count || '—'}</div>`;
   card.appendChild(info);
 
+  // Кнопка ⓘ (предпросмотр)
   const infoBtn = document.createElement('button');
   infoBtn.className = 'book-info-btn';
   infoBtn.textContent = 'ⓘ';
   infoBtn.onclick = e => { e.stopPropagation(); openModal(b); };
   card.appendChild(infoBtn);
 
+  // Галочка
   const check = document.createElement('div');
   check.className = 'book-check';
   check.textContent = '✓';
   card.appendChild(check);
 
   card.onclick = () => {
-    if (state.selected.has(key)) state.selected.delete(key);
-    else state.selected.add(key);
+    if (state.selected.has(key)) {
+      state.selected.delete(key);
+    } else {
+      state.selected.add(key);
+      tg?.HapticFeedback?.impactOccurred?.('light');
+    }
     updateSaveBar();
     card.classList.toggle('selected');
-    tg?.HapticFeedback?.impactOccurred?.('light');
   };
   return card;
 }
@@ -227,21 +257,22 @@ function updateSaveBar() {
   bar.classList.toggle('hidden', n === 0);
 }
 
-// ═══ Поиск ═══
+// ═══════════ Поиск ═══════════
 $('searchInput')?.addEventListener('input', e => {
   state.query = e.target.value;
   renderBooksList();
 });
 
-// ═══ Refresh ═══
+// ═══════════ Refresh ═══════════
 $('refreshBtn')?.addEventListener('click', async () => {
   $('refreshBtn').textContent = '⏳';
   await loadCatalog();
   $('refreshBtn').textContent = '🔄';
 });
 
-// ═══ Modal ═══
+// ═══════════ Modal (предпросмотр) ═══════════
 let modalBook = null;
+
 function openModal(b) {
   modalBook = b;
   $('modalImg').src = b.img || '';
@@ -255,18 +286,21 @@ function openModal(b) {
   $('modalLink').href = b.base_url || '#';
   $('modal').classList.remove('hidden');
 }
-$('modalClose').onclick = () => $('modal').classList.add('hidden');
-$('modal').onclick = e => { if (e.target.id === 'modal') $('modal').classList.add('hidden'); };
-$('modalSelect').onclick = () => {
+
+$('modalClose')?.addEventListener('click', () => $('modal').classList.add('hidden'));
+$('modal')?.addEventListener('click', e => {
+  if (e.target.id === 'modal') $('modal').classList.add('hidden');
+});
+$('modalSelect')?.addEventListener('click', () => {
   if (!modalBook) return;
   state.selected.add(bookKey(modalBook));
   updateSaveBar();
   $('modal').classList.add('hidden');
   renderBooksList();
   tg?.HapticFeedback?.impactOccurred?.('medium');
-};
+});
 
-// ═══ Save ═══
+// ═══════════ Save ═══════════
 $('saveBtn').onclick = () => {
   const chosen = [];
   Object.values(state.catalog).flat().forEach(b => {
@@ -282,11 +316,14 @@ $('saveBtn').onclick = () => {
   });
   if (!chosen.length) return;
 
-  // sendData работает ТОЛЬКО в личке
-  const chatType = tg?.initDataUnsafe?.chat_type;
-  if (tg && chatType && chatType !== 'private') {
-    alert('Сохранение работает только в личке с ботом.\n' +
-          'Открой бота в личных сообщениях и повтори.');
+  // sendData работает ТОЛЬКО в личке.
+  // initDataUnsafe.chat есть ТОЛЬКО в группах/каналах.
+  // В личке chat = null.
+  const chat = tg?.initDataUnsafe?.chat;
+  if (tg && chat && chat.type && chat.type !== 'private') {
+    alert('⚠️ Сохранение работает только в личке с ботом.\n\n' +
+          'Закрой каталог, открой личный чат с ботом ' +
+          'и нажми «🗂 Каталог» там.');
     return;
   }
 
@@ -309,7 +346,10 @@ function showResult(n) {
   tg?.HapticFeedback?.notificationOccurred?.('success');
 }
 
-$('closeBtn').onclick = () => { if (tg) tg.close(); else location.reload(); };
+$('closeBtn').onclick = () => {
+  if (tg) tg.close();
+  else location.reload();
+};
 
-// ═══ Старт ═══
+// ═══════════ Старт ═══════════
 loadCatalog();
