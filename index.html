@@ -1,47 +1,71 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>ГДЗ Каталог</title>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>ГДЗ Каталог</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="app">
-        <div id="loading" class="screen active">
-            <div class="spinner"></div>
-            <p>Загружаю каталог…</p>
-        </div>
+<div id="app">
 
-        <div id="classScreen" class="screen">
-            <h2>📚 Выбери класс</h2>
-            <div id="classGrid" class="class-grid"></div>
-        </div>
+  <!-- Loading -->
+  <div id="loading" class="screen active">
+    <div class="spinner"></div>
+    <p>Загружаю каталог…</p>
+  </div>
 
-        <div id="bookScreen" class="screen">
-            <div class="top-bar">
-                <button id="backBtn" class="icon-btn">←</button>
-                <h2 id="classTitle">Учебники</h2>
-                <button id="selectAllBtn" class="icon-btn">✓</button>
-            </div>
-            <div id="bookList" class="book-list"></div>
-        </div>
-
-        <div id="saveBar" class="save-bar hidden">
-            <span id="selectedCount">0 выбрано</span>
-            <button id="saveBtn">💾 Сохранить</button>
-        </div>
-
-        <div id="resultScreen" class="screen">
-            <div class="result-box">
-                <div id="resultIcon">✅</div>
-                <h2 id="resultTitle">Готово!</h2>
-                <p id="resultText"></p>
-                <button id="closeBtn">Закрыть</button>
-            </div>
-        </div>
+  <!-- Классы -->
+  <div id="classScreen" class="screen">
+    <div class="head">
+      <h2>📚 Классы</h2>
+      <button id="refreshBtn" class="icon-btn">🔄</button>
     </div>
-    <script src="app.js"></script>
+    <div id="searchWrap" class="search-wrap hidden">
+      <input id="searchInput" type="text" placeholder="Поиск: автор, название, предмет…">
+    </div>
+    <div id="crumbs" class="crumbs"></div>
+    <div id="classGrid" class="class-grid"></div>
+    <div id="subjectChips" class="chips hidden"></div>
+    <div id="booksList" class="books-list"></div>
+  </div>
+
+  <!-- Результат -->
+  <div id="resultScreen" class="screen">
+    <div class="result-box">
+      <div id="resultIcon">✅</div>
+      <h2 id="resultTitle">Готово</h2>
+      <p id="resultText"></p>
+      <button id="closeBtn">Закрыть</button>
+    </div>
+  </div>
+
+  <!-- Save bar -->
+  <div id="saveBar" class="save-bar hidden">
+    <span id="selectedCount">0 выбрано</span>
+    <button id="saveBtn">💾 Сохранить</button>
+  </div>
+
+  <!-- Модальное окно предпросмотра -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close">✕</button>
+      <img id="modalImg" class="modal-img" alt="">
+      <div class="modal-body">
+        <div id="modalSubject" class="modal-subject"></div>
+        <h2 id="modalTitle"></h2>
+        <div class="modal-row"><span>Автор:</span> <b id="modalAuthor"></b></div>
+        <div class="modal-row"><span>Шаблон:</span> <code id="modalTpl"></code></div>
+        <div class="modal-row"><span>Заданий в сборнике:</span> <b id="modalTasks"></b></div>
+        <div class="modal-row"><span>Класс:</span> <b id="modalClass"></b></div>
+        <div class="modal-row"><span>Ссылка:</span> <a id="modalLink" target="_blank">открыть на gdz.ru</a></div>
+        <button id="modalSelect" class="modal-select">✓ Выбрать этот учебник</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="app.js"></script>
 </body>
 </html>
