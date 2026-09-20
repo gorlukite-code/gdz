@@ -1,1 +1,616 @@
-
+{
+  "7": [
+    {
+      "subject": "English",
+      "name": "Английский язык       7 класс\n                     Углубленный уровеньАвторы:О.В. Афанасьева, И.В. МихееваТип книги:Учеб",
+      "author": "Английский",
+      "base_url": "https://gdz.ru/class-7/english/afanaseva-11/",
+      "template": "{task}/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/005/874/0000/62017f045e567.png",
+      "tasks_count": 308
+    },
+    {
+      "subject": "English",
+      "name": "Английский язык       7 класс\n               сборник упражнений (Афанасьева углубленный)Автор:Барашкова Е.А.Издательство",
+      "author": "Английский",
+      "base_url": "https://gdz.ru/class-7/english/sbornik-uprazgnenij-barashkova/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/084/896/0002/5afa7429192ae.jpg",
+      "tasks_count": 270
+    },
+    {
+      "subject": "English",
+      "name": "Английский язык       7 класс\n               сборник упражнений (Биболетова)Автор:Барашкова Е.А.Издательство:ЭкзаменСери",
+      "author": "Английский",
+      "base_url": "https://gdz.ru/class-7/english/sbornik-uprazhnenij-barashkova-k-biboletovoj/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/096/949/0000/66a0e32612b96.jpg",
+      "tasks_count": 280
+    },
+    {
+      "subject": "Fizika",
+      "name": "Физика       7 класс\n                     Базовый уровеньАвторы:А.В. Перышкин, А.И. ИвановИздательства:Дрофа, ЭкзаменТип",
+      "author": "Физика",
+      "base_url": "https://gdz.ru/class-7/fizika/peryshkin-7/",
+      "template": "2-chapter-{task}/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/005/995/0000/66d06f2e7706e.jpg",
+      "tasks_count": 25
+    },
+    {
+      "subject": "Fizika",
+      "name": "Физика       7 класс\n               дидактические материалы (Перышкин)                     Базовый уровеньАвторы:Марон А",
+      "author": "Физика",
+      "base_url": "https://gdz.ru/class-7/fizika/didakticheskie-materiali-maron/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/053/905/0000/67c0781626af1.jpg",
+      "tasks_count": 21
+    },
+    {
+      "subject": "Fizika",
+      "name": "Физика       7 класс\n               рабочая тетрадь (Перышкин)                     Базовый уровеньАвторы:Ханнанова Т.А.,",
+      "author": "Физика",
+      "base_url": "https://gdz.ru/class-7/fizika/hannova/",
+      "template": "{task}/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/028/821/0000/66d0561d11ba4.jpg",
+      "tasks_count": 9
+    },
+    {
+      "subject": "Fizika",
+      "name": "Физика       7 класс\n               рабочая тетрадьАвторы:Н.С. Пурышева, Н.Е. ВажеевскаИздательство:ДрофаТип книги:Рабоч",
+      "author": "Физика",
+      "base_url": "https://gdz.ru/class-7/fizika/rabochaya-tetrad-purisheva/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/074/234/0002/63eb8e4211a57.jpg",
+      "tasks_count": 348
+    },
+    {
+      "subject": "Fizika",
+      "name": "Физика       7 класс\n               сборник вопросов и задач (Перышкин)                     Базовый уровеньАвторы:Марон ",
+      "author": "Физика",
+      "base_url": "https://gdz.ru/class-7/fizika/sbornik-voprosov-i-zadach-maron/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/133/168/0000/6368a8bb66c24.jpg",
+      "tasks_count": 708
+    },
+    {
+      "subject": "Fizika",
+      "name": "Физика       7 классАвторы:Генденштейн Л.Э., Булатова А.А., Корнильев И.Н., Кошкина А.В.Издательство:БиномТип книги:Учеб",
+      "author": "Физика",
+      "base_url": "https://gdz.ru/class-7/fizika/gendenshteijn-bulatova/",
+      "template": "4-chapter-{task}/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/110/708/0002/5c4835cda98c8.jpg",
+      "tasks_count": 3
+    },
+    {
+      "subject": "Fizika",
+      "name": "Физика       7 классАвторы:Пурышева Н.С., Важеевская Н.Е.Издательство:ДрофаТип книги:УчебникГод:2016",
+      "author": "Физика",
+      "base_url": "https://gdz.ru/class-7/fizika/purysheva/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/020/904/0000/5f6314edd2677.jpg",
+      "tasks_count": 56
+    },
+    {
+      "subject": "Fizika",
+      "name": "Физика       7-9 класс\n               Сборник задачАвтор:А.В. ПерышкинИздательство:ЭкзаменТип книги:Сборник задачГод:201",
+      "author": "Физика",
+      "base_url": "https://gdz.ru/class-7/fizika/sbornik-zadach-peryshkin/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/118/934/0000/5e3adf7abcb32.jpg",
+      "tasks_count": 1870
+    },
+    {
+      "subject": "Muzyka",
+      "name": "Музыка       7 класс\n               домашние заданияАвтор:Золина Е.М.Издательство:ПрестоТип книги:Домашние заданияГод:20",
+      "author": "Музыка",
+      "base_url": "https://gdz.ru/class-7/muzyka/domashnie-zadaniya-zolina/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/173/637/0000/609c1d41c85ab.jpg",
+      "tasks_count": 74
+    },
+    {
+      "subject": "Obshhestvoznanie",
+      "name": "Обществознание       7 класс\n               контрольно-измерительные материалыАвтор:Волкова К.В.Тип книги:Контрольно-изм",
+      "author": "Обществознание",
+      "base_url": "https://gdz.ru/class-7/obshhestvoznanie/kim-volkova/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/080/485/0000/5d5bb5e4c6d0b.jpg",
+      "tasks_count": 14
+    },
+    {
+      "subject": "Russkii yazik",
+      "name": "Русский язык       7 класс\n               ПрактикаАвторы:С.Н. Пименова, А.П. Еремеева, А.Ю. Купалова, Г.К. Лидман-ОрловИ",
+      "author": "Русский",
+      "base_url": "https://gdz.ru/class-7/russkii_yazik/pimenova-praktika-7/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/005/946/0000/650018a22c971.jpg",
+      "tasks_count": 550
+    },
+    {
+      "subject": "Russkii yazik",
+      "name": "Русский язык       7 класс\n               Русская речьАвтор:Никитина Е.И.Издательство:ДрофаТип книги:УчебникГод:2016",
+      "author": "Русский",
+      "base_url": "https://gdz.ru/class-7/russkii_yazik/nikitina/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/031/959/0002/59479463e9c40.png",
+      "tasks_count": 125
+    },
+    {
+      "subject": "Russkii yazik",
+      "name": "Русский язык       7 класс\n               рабочая тетрадь                     Углубленный уровеньАвторы:Бабайцева В.В., ",
+      "author": "Русский",
+      "base_url": "https://gdz.ru/class-7/russkii_yazik/rabochaya-tetrad-babajceva/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/087/359/0002/5b3b16b51d4d5.jpg",
+      "tasks_count": 193
+    },
+    {
+      "subject": "Russkii yazik",
+      "name": "Русский язык       7 класс\n               рабочая тетрадь (Баранов)Автор:Е. Л. ЕрохинаИздательство:ЭкзаменСерия:УМКТип к",
+      "author": "Русский",
+      "base_url": "https://gdz.ru/class-7/russkii_yazik/erohina-rabochaya-tetrad-ymk/",
+      "template": "{task}/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/161/741/0000/6304ee41c500c.jpg",
+      "tasks_count": 90
+    },
+    {
+      "subject": "Russkii yazik",
+      "name": "Русский язык       7 класс\n               рабочая тетрадь (Баранов)Авторы:Ефремова Е.А., Ладыженская Т.А.Тип книги:Рабоч",
+      "author": "Русский",
+      "base_url": "https://gdz.ru/class-7/russkii_yazik/rabochaya-tetrad-efremova/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/020/808/0002/5c89f0ee57d71.jpg",
+      "tasks_count": 127
+    },
+    {
+      "subject": "Russkii yazik",
+      "name": "Русский язык       7 класс\n               рабочая тетрадь (Разумовская)Автор:Ларионова Л.Г.Издательство:ДрофаТип книги:Р",
+      "author": "Русский",
+      "base_url": "https://gdz.ru/class-7/russkii_yazik/rabochaya-tetrad-larionova/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/088/897/0002/5b240dee3a8e7.jpg",
+      "tasks_count": 232
+    },
+    {
+      "subject": "Russkii yazik",
+      "name": "Русский язык       7 класс\n               рабочая тетрадь Скорая помощь (Баранов)Авторы:Янченко В.Д., Латфуллина Л.Г., М",
+      "author": "Русский",
+      "base_url": "https://gdz.ru/class-7/russkii_yazik/rabochaya-tetrad-yanchenko/",
+      "template": "{task}/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/130/600/0000/69e1e2e28da88.jpg",
+      "tasks_count": 227
+    },
+    {
+      "subject": "Russkii yazik",
+      "name": "Русский язык       7 классАвтор:Коновалова М.В.Издательство:ОсноваТип книги:УчебникГод:2014",
+      "author": "Русский",
+      "base_url": "https://gdz.ru/class-7/russkii_yazik/konovalova/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/130/448/0000/5d1095c3383f0.jpg",
+      "tasks_count": 337
+    },
+    {
+      "subject": "Russkii yazik",
+      "name": "Русский язык       7 классАвторы:Александрова О.М., Загоровская О.В., Богданов С.И.Тип книги:УчебникГод:2020-2023",
+      "author": "Русский",
+      "base_url": "https://gdz.ru/class-7/russkii_yazik/aleksandrova-bogdanov/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/145/283/0000/5e6e76be10e7b.jpg",
+      "tasks_count": 161
+    },
+    {
+      "subject": "Russkii yazik",
+      "name": "Русский язык       7 классАвторы:Бунеев Р.Н., Бунеева Е.В., Коммисарова Л.Ю., Текучева И.В.Издательство:БалассСерия:Школ",
+      "author": "Русский",
+      "base_url": "https://gdz.ru/class-7/russkii_yazik/buneev/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/029/082/0002/5e19bae01fd0b.jpg",
+      "tasks_count": 439
+    },
+    {
+      "subject": "Russkii yazik",
+      "name": "Русский язык       7 классАвторы:Воителева Т.М., Марченко О.Н., Смирнова Л.Г., Шамшин И.В.Издательство:Русское словоСери",
+      "author": "Русский",
+      "base_url": "https://gdz.ru/class-7/russkii_yazik/voiteleva/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/154/990/0000/5f2d593a10b30.jpg",
+      "tasks_count": 145
+    },
+    {
+      "subject": "Russkii yazik",
+      "name": "Русский язык       7 классАвторы:М.Т. Баранов, Т.А. Ладыженская, Л.А. Тростенцова, Л.Т. Григорян, И.И. КулибабаТип книги",
+      "author": "Русский",
+      "base_url": "https://gdz.ru/class-7/russkii_yazik/baranova/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/005/944/0000/6a6628eb34f7d.jpg",
+      "tasks_count": 644
+    },
+    {
+      "subject": "Russkii yazik",
+      "name": "Русский язык       7 классАвторы:С.И. Львова, В.В. ЛьвовИздательство:МнемозинаТип книги:УчебникГод:2012",
+      "author": "Русский",
+      "base_url": "https://gdz.ru/class-7/russkii_yazik/reshebnik-lvova-s-i-lvov-v-v/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/005/945/0002/5bfba993778a3.jpg",
+      "tasks_count": 744
+    },
+    {
+      "subject": "Russkii yazik",
+      "name": "Русский язык       7 классАвторы:Сабитова З.К., Скляренко К.С.Издательство:МектепТип книги:УчебникГод:2018",
+      "author": "Русский",
+      "base_url": "https://gdz.ru/class-7/russkii_yazik/sabitova/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/141/609/0000/5dfb2e7a778fa.jpg",
+      "tasks_count": 560
+    },
+    {
+      "subject": "Russkii yazik",
+      "name": "Русский язык       7 классАвторы:Шмелев А.Д., Флоренская Э.А., Савчук Л.О., Шмелева Е.Я.Издательство:Вентана-графСерия:А",
+      "author": "Русский",
+      "base_url": "https://gdz.ru/class-7/russkii_yazik/shmelev/",
+      "template": "1-chapter-{task}/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/026/004/0000/62c5e0dc1bae1.jpg",
+      "tasks_count": 673
+    },
+    {
+      "subject": "Ukrainskiy yazik",
+      "name": "Украинский язык       7 классАвтор:Глазова О.П.Издательство:ОсвiтаТип книги:УчебникГод:2015",
+      "author": "Украинский",
+      "base_url": "https://gdz.ru/class-7/ukrainskiy_yazik/glazova-o-p/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/114/268/0002/5c6706d5913a8.jpg",
+      "tasks_count": 578
+    },
+    {
+      "subject": "Ukrainskiy yazik",
+      "name": "Украинский язык       7 классАвторы:Заболотний О.В., Заболотний В.В.Издательство:ГенезаТип книги:УчебникГод:2015",
+      "author": "Украинский",
+      "base_url": "https://gdz.ru/class-7/ukrainskiy_yazik/zabolotnij/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/130/410/0000/5d1088df10d39.jpg",
+      "tasks_count": 623
+    },
+    {
+      "subject": "Алгебре",
+      "name": "Алгебра       7 класс\n                     Базовый уровеньАвторы:А. Г. Мерзляк, В. Б. Полонский, М. С. ЯкирИздательство:",
+      "author": "Алгебра",
+      "base_url": "https://gdz.ru/class-7/algebra/merzlyak-polonskij/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/022/471/0000/651c1109b8727.jpg",
+      "tasks_count": 1445
+    },
+    {
+      "subject": "Алгебре",
+      "name": "Алгебра       7 класс\n                     Базовый уровеньАвторы:Колягин Ю.М., Ткачева М.В., Федорова Н.Е., Шабунин М.И.",
+      "author": "Алгебра",
+      "base_url": "https://gdz.ru/class-7/algebra/kolyagin-tkacheva/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/107/667/0000/689c5bd80735e.jpg",
+      "tasks_count": 861
+    },
+    {
+      "subject": "Алгебре",
+      "name": "Алгебра       7 класс\n                     Углубленный уровеньАвторы:Ю.Н. Макарычев, Н.Г. Миндюк, К.И. Нешков, И.Е. Феок",
+      "author": "Алгебра",
+      "base_url": "https://gdz.ru/class-7/algebra/makarychev-uglublennoe-izuchenie/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/017/316/0000/68b011aaed59f.jpg",
+      "tasks_count": 1659
+    },
+    {
+      "subject": "Алгебре",
+      "name": "Алгебра       7 класс\n               рабочая тетрадь (Дорофеев)Авторы:Минаева С.С., Рослова Л.О.Тип книги:Рабочая тетрад",
+      "author": "Алгебра",
+      "base_url": "https://gdz.ru/class-7/algebra/rabochaya-tetrad-minaeva/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/108/811/0000/656f50303b8d0.jpg",
+      "tasks_count": 253
+    },
+    {
+      "subject": "Алгебре",
+      "name": "Алгебра       7 класс\n               рабочая тетрадь (Никольский)Авторы:Потапов М.К., Шевкин А.В.Серия:МГУ - школеТип кн",
+      "author": "Алгебра",
+      "base_url": "https://gdz.ru/class-7/algebra/rabochaya-tetrad-potapov/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/107/359/0000/656649928f5e1.jpg",
+      "tasks_count": 362
+    },
+    {
+      "subject": "Алгебре",
+      "name": "Алгебра       7 класс\n               рабочая тетрадьАвторы:Лебединцева Е. А., Беленкова Е. Ю.Издательство:Интеллект, Цен",
+      "author": "Алгебра",
+      "base_url": "https://gdz.ru/class-7/algebra/rabochaya-tetrad-lebedinceva/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/143/967/0000/64bc3f633b76a.jpg",
+      "tasks_count": 171
+    },
+    {
+      "subject": "Алгебре",
+      "name": "Алгебра       7 класс\n               рабочая тетрадьАвторы:Муравин Г.К., Муравина О.В.Издательство:ДрофаТип книги:Рабоча",
+      "author": "Алгебра",
+      "base_url": "https://gdz.ru/class-7/algebra/rabochaya-tetrad-muravin/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/106/864/0002/5c222715c35f2.jpg",
+      "tasks_count": 224
+    },
+    {
+      "subject": "Алгебре",
+      "name": "Алгебра       7 классАвтор:Истер О.С.Издательство:ГенезаТип книги:УчебникГод:2015",
+      "author": "Алгебра",
+      "base_url": "https://gdz.ru/class-7/algebra/ister/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/130/062/0000/5d0c5554716ac.jpg",
+      "tasks_count": 1249
+    },
+    {
+      "subject": "Алгебре",
+      "name": "Алгебра       7 классАвтор:Цейтлiн О.I.Издательство:РанокТип книги:УчебникГод:2015",
+      "author": "Алгебра",
+      "base_url": "https://gdz.ru/class-7/algebra/cejtlin/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/111/639/0000/65623ae94afb1.jpg",
+      "tasks_count": 525
+    },
+    {
+      "subject": "Алгебре",
+      "name": "Алгебра       7 классАвторы:Абылкасымова А.Е., Кучер Т.П., Жумагулова З.А., Корчевский В.Е.Издательство:МектепТип книги:",
+      "author": "Алгебра",
+      "base_url": "https://gdz.ru/class-7/algebra/abilkasimova/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/138/538/0000/5d9739ec8e58f.jpg",
+      "tasks_count": 96
+    },
+    {
+      "subject": "Алгебре",
+      "name": "Алгебра       7 классАвторы:Бунимович Е.А., Кузнецова Л.В., Минаева С.С.Серия:Сферы 1-11Тип книги:УчебникГод:2019",
+      "author": "Алгебра",
+      "base_url": "https://gdz.ru/class-7/algebra/bunimovich/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/132/828/0000/656f5cfb933bc.jpg",
+      "tasks_count": 719
+    },
+    {
+      "subject": "Алгебре",
+      "name": "Алгебра       7 классАвторы:Г. К. Муравин, К. С. Муравин, О. В. МуравинаИздательство:ДрофаТип книги:УчебникГод:2016",
+      "author": "Алгебра",
+      "base_url": "https://gdz.ru/class-7/algebra/muravin-g-k/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/022/726/0002/5c8900efe8a7e.jpg",
+      "tasks_count": 594
+    },
+    {
+      "subject": "Алгебре",
+      "name": "Алгебра       7 классАвторы:Г.В. Дорофеев, С.Б. Суворова, Е.А. БунимовичТип книги:УчебникГод:2016-2020",
+      "author": "Алгебра",
+      "base_url": "https://gdz.ru/class-7/algebra/dorofeev/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/017/252/0000/65622ffa208be.jpg",
+      "tasks_count": 983
+    },
+    {
+      "subject": "Алгебре",
+      "name": "Алгебра       7 классАвторы:С.М. Никольский, М.К. Потапов, Н.Н. Решетников, А.В. ШевкинСерия:МГУ - школеТип книги:Учебни",
+      "author": "Алгебра",
+      "base_url": "https://gdz.ru/class-7/algebra/nikolskiy-s-m/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/005/967/0000/6562097391487.jpg",
+      "tasks_count": 1130
+    },
+    {
+      "subject": "Алгебре",
+      "name": "Алгебра       7 классАвторы:Тарасенкова Н.А., Богатырева И.М., Коломиец О.М., Сердюк З.О.Издательство:ОсвiтаТип книги:Уч",
+      "author": "Алгебра",
+      "base_url": "https://gdz.ru/class-7/algebra/tarasenkova/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/127/809/0000/5cdcf8df964e4.jpg",
+      "tasks_count": 1185
+    },
+    {
+      "subject": "Алгебре",
+      "name": "Алгебра       7 классАвторы:Ш.А. Алимов, Ю.М. Колягин, Ю.В. СидоровТип книги:УчебникГод:2015",
+      "author": "Алгебра",
+      "base_url": "https://gdz.ru/class-7/algebra/alimov-7/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/005/961/0000/65624a13e82cb.jpg",
+      "tasks_count": 851
+    },
+    {
+      "subject": "Биологии",
+      "name": "Биология       7 класс\n               рабочая тетрадь Многообразие живых организмов. Бактерии, грибы, растенияАвторы:Зах",
+      "author": "Биология",
+      "base_url": "https://gdz.ru/class-7/biologiya/zaharov-zhivoj-organizm-tetrad/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/117/955/0000/5dc2a37a2e355.jpg",
+      "tasks_count": 140
+    },
+    {
+      "subject": "Биологии",
+      "name": "Биология       7 класс\n               рабочая тетрадь Многообразие живых организмовАвторы:Захаров В.Б., Сонин Н.И.Издате",
+      "author": "Биология",
+      "base_url": "https://gdz.ru/class-7/biologiya/zaharov-tetrad/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/117/920/0000/5dc2a77621062.jpg",
+      "tasks_count": 201
+    },
+    {
+      "subject": "Биологии",
+      "name": "Биология       7 класс\n               рабочая тетрадь Растения. Бактерии. Грибы.                     Для обучающихся с и",
+      "author": "Биология",
+      "base_url": "https://gdz.ru/class-7/biologiya/rabochaya-tetrad-klepinina/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/180/751/0000/640315ed67362.jpg",
+      "tasks_count": 171
+    },
+    {
+      "subject": "Биологии",
+      "name": "Биология       7 класс\n               рабочая тетрадьАвтор:Суматохин С.В.Издательство:МнемозинаТип книги:Рабочая тетрадь",
+      "author": "Биология",
+      "base_url": "https://gdz.ru/class-7/biologiya/rabochaya-tetrad-zhivotnye-sumatohin/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/173/092/0000/60b0c79228cc7.jpg",
+      "tasks_count": 212
+    },
+    {
+      "subject": "Биологии",
+      "name": "Биология       7 классАвторы:Пономарева И.Н., Корнилова О.А., Кучменко В.С.Издательство:Вентана-графТип книги:УчебникГод",
+      "author": "Биология",
+      "base_url": "https://gdz.ru/class-7/biologiya/ponomareva-kornilova/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/108/560/0000/5cde67e730d76.jpg",
+      "tasks_count": 5
+    },
+    {
+      "subject": "Географии",
+      "name": "География       7 класс\n               контурные карты (Кузнецов)Авторы:Котляр О.Г., Савельева Л. Е., Григорьева М.Серия",
+      "author": "География",
+      "base_url": "https://gdz.ru/class-7/geografiya/konturnie-karti-kotlyar/",
+      "template": "{task}/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/181/337/0001/69bd43e1a20b5.jpg",
+      "tasks_count": 21
+    },
+    {
+      "subject": "Географии",
+      "name": "География       7 класс\n               контурные картыАвторы:Косолапова М.В., Приваловский А.Н.Издательство:ДрофаСерия:У",
+      "author": "География",
+      "base_url": "https://gdz.ru/class-7/geografiya/konturnie-karti-rumyancev/",
+      "template": "{task}/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/187/096/0001/69e127da050a5.jpg",
+      "tasks_count": 20
+    },
+    {
+      "subject": "Геометрии",
+      "name": "ГДЗ по геометрии за 7-9 класс Атанасян",
+      "author": "Гдз",
+      "base_url": "https://gdz.ru/class-7/geometria/atanasyan-7-9/",
+      "template": "1-chapter-{task}/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/005/983/0000/69e4dbab0e061.jpg",
+      "tasks_count": 1421
+    },
+    {
+      "subject": "Геометрии",
+      "name": "Геометрия       7 класс\n               рабочая тетрадь (Атанасян)Автор:Мищенко Т.М.Издательство:ЭкзаменСерия:УМКТип книг",
+      "author": "Геометрия",
+      "base_url": "https://gdz.ru/class-7/geometria/rabochaya-tetrad-mishenko/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/113/463/0002/5c617c812252f.jpg",
+      "tasks_count": 199
+    },
+    {
+      "subject": "Геометрии",
+      "name": "Геометрия       7 класс\n               рабочая тетрадьАвторы:Бутузов В.Ф., Кадомцев С.Б., Прасолов В.В.Серия:МГУ - школе",
+      "author": "Геометрия",
+      "base_url": "https://gdz.ru/class-7/geometria/tetrad-butuzov/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/032/396/0002/5c3e18188011f.jpg",
+      "tasks_count": 182
+    },
+    {
+      "subject": "Геометрии",
+      "name": "Геометрия       7 класс\n               рабочая тетрадьАвторы:Л.С. Атанасян, В.Ф. Бутузов, Ю.А. Глазков, И.И. ЮдинаТип кн",
+      "author": "Геометрия",
+      "base_url": "https://gdz.ru/class-7/geometria/rabochaya-tetrad-atanasyan/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/005/985/0000/5d9473b95562e.jpg",
+      "tasks_count": 157
+    },
+    {
+      "subject": "Геометрии",
+      "name": "Геометрия       7 класс\n               рабочая тетрадьАвторы:Мерзляк А.Г., Полонский В.Б., Якир М.С.Издательство:Вентана",
+      "author": "Геометрия",
+      "base_url": "https://gdz.ru/class-7/geometria/rabochaya-tetrad-merzlyak/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/076/771/0002/5a9e374b5c29f.jpg",
+      "tasks_count": 330
+    },
+    {
+      "subject": "Информатике",
+      "name": "Информатика       7 класс\n               икт рабочая тетрадьАвторы:Л.Л. Босова, А.Ю. БосоваИздательство:БиномТип книги:Р",
+      "author": "Информатика",
+      "base_url": "https://gdz.ru/class-7/informatika/tetrad-ikt-bosova/",
+      "template": "2-chapter-{task}/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/051/377/0000/6eba92f0b0ad.jpg",
+      "tasks_count": 157
+    },
+    {
+      "subject": "Истории",
+      "name": "История       7 класс\n                контрольно-измерительные материалы История РоссииАвтор:Волкова К.В.Тип книги:Контр",
+      "author": "История",
+      "base_url": "https://gdz.ru/class-7/istoriya/kim-volkova/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/103/629/0002/5c26f2b39f354.jpg",
+      "tasks_count": 67
+    },
+    {
+      "subject": "Истории",
+      "name": "История       7 класс\n               История УкраиныАвторы:Гiсем О.В., Мартинюк О.О.Издательство:РанокТип книги:УчебникГ",
+      "author": "История",
+      "base_url": "https://gdz.ru/class-7/istoriya/gisem/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/105/259/0002/5c45a44a7a176.jpg",
+      "tasks_count": 23
+    },
+    {
+      "subject": "Истории",
+      "name": "История       7 класс\n               История нового времениАвторы:А. Я. Юдовская, П. А. Баранов, Л. М. ВанюшкинаТип книг",
+      "author": "История",
+      "base_url": "https://gdz.ru/class-7/istoriya/yudovskaya/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/img/mascot/mascot_with-magnifier.svg",
+      "tasks_count": 16
+    },
+    {
+      "subject": "Истории",
+      "name": "История       7 класс\n               контрольные работы История России (Арсентьев)Автор:И.А. АртасовТип книги:Контрольны",
+      "author": "История",
+      "base_url": "https://gdz.ru/class-7/istoriya/artasov-kontrolnye-raboty/",
+      "template": "7-chapter-{task}/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/164/124/0000/602182b18eb59.jpg",
+      "tasks_count": 4
+    },
+    {
+      "subject": "Истории",
+      "name": "История       7 класс\n               контурные карты Нового времениАвторы:Мартынова Т.И., Курбский Н.А.Издательство:Дроф",
+      "author": "История",
+      "base_url": "https://gdz.ru/class-7/istoriya/konturnie-karti-martinova-novoe-vremya/",
+      "template": "{task}/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/182/383/0001/6127ce6e43202.jpg",
+      "tasks_count": 14
+    },
+    {
+      "subject": "Истории",
+      "name": "История       7 класс\n               тетрадь-экзаменатор История России (Данилов)Автор:Артасов И.А.Серия:СферыТип книги:",
+      "author": "История",
+      "base_url": "https://gdz.ru/class-7/istoriya/artasov-tetrad-ehkzamenator/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/131/634/0000/5d246bb96ec6b.jpg",
+      "tasks_count": 5
+    },
+    {
+      "subject": "Математике",
+      "name": "Математика       7 класс\n                     Для обучающихся с интеллектуальными нарушениямиАвтор:Алышева Т.В.Серия:ОВЗ",
+      "author": "Математика",
+      "base_url": "https://gdz.ru/class-7/matematika/alisheva/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/180/026/0000/61449ba2b2091.jpg",
+      "tasks_count": 887
+    },
+    {
+      "subject": "Математике",
+      "name": "Математика       7 класс\n               рабочая тетрадь                     Для обучающихся с интеллектуальными нарушени",
+      "author": "Математика",
+      "base_url": "https://gdz.ru/class-7/matematika/rabochaya-tetrad-alisheva/",
+      "template": "{task}-nom/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/180/059/0000/61ccf2c2ac916.jpg",
+      "tasks_count": 256
+    },
+    {
+      "subject": "Химии",
+      "name": "Химия       7 классАвторы:Еремин В.В., Дроздов А.А., Лунин В.В.Издательство:ДрофаТип книги:УчебникГод:2020-2022",
+      "author": "Химия",
+      "base_url": "https://gdz.ru/class-7/himiya/eremin/",
+      "template": "{task}/",
+      "img": "https://gdz.ru/attachments/images/tasks/000/183/057/0000/61386ee985bb7.jpg",
+      "tasks_count": 28
+    }
+  ]
+}
